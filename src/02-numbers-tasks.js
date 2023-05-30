@@ -51,9 +51,8 @@ function getCircleCircumference(radius) {
  *  10, 0  => 5
  *  -3, 3  => 0
  */
-function getAverage(value1, value2) {
-  const sum = value1 + value2;
-  return Number(sum / 2);
+function getAverage(a, b) {
+  return a / 2 + b / 2;
 }
 
 
@@ -237,9 +236,8 @@ function isPrime(n) {
  *   toNumber(new Number(42), 0) => 42
  */
 function toNumber(value, def) {
-  const num = Number(value);
-  // eslint-disable-next-line no-restricted-globals
-  return isNaN(num) ? def : num;
+  const convertedValue = Number(value);
+  return Number.isNaN(convertedValue) ? def : convertedValue;
 }
 
 
